@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query</title>
+
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    
+</head>
+<body>
+
+
+  <!-- query section -->
+   <h2 align="center">Query Us</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusantium quas sit commodi corporis sint rem reiciendis, laudantium quibusdam sunt beatae ab ipsa nisi suscipit et magni dolor unde! Quibusdam?</p><hr>
+
+   <h2>Fill Your Queries</h2>
+   <form action="{{  url_for('user_query')  }}" method="post">
+    <label for="name">
+        Name <br>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+    </label><br><br>
+    
+    <label for="age">
+        Age <br>
+        <input type="text" name="age" id="age" placeholder="Your Age" required>
+    </label><br><br>
+
+    <label for="address">
+        Address <br>
+        <input type="text" name="address" id="address" placeholder="Enter Your Address" required>
+    </label><br><br>
+
+    <label for="college">
+        college <br>
+        <input type="text" name="college" id="college" placeholder="Enter college name" required>
+    </label><br><br>
+
+    <label for="query">
+        Query <br>
+        <textarea id="query" name="query" placeholder="Enter Your Query" required></textarea>
+    </label><br><br>
+    <button type="submit">Submit Query</button>
+   </form>
+   <!-- Footer -->
+   <footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
